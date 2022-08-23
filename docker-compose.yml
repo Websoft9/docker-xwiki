@@ -8,7 +8,7 @@ services:
     image: xwiki:${APP_VERSION}
     container_name: ${APP_CONTAINER_NAME}
     ports:
-      - ${APP_PORT}:8080
+      - ${APP_HTTP_PORT}:8080
     volumes:
       - xwiki:/usr/local/xwiki
     environment:
